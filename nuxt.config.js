@@ -1,5 +1,5 @@
-
 export default {
+  srcDir: 'src',
   mode: 'universal',
   /*
   ** Headers of the page
