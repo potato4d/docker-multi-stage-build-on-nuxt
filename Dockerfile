@@ -29,6 +29,8 @@ COPY . /app
 
 # 別のビルドから成果物をコピー可能
 COPY --from=build-env /app/.nuxt /app/.nuxt
-RUN yarn
+
+# 本番では devDeps を消してファイルサイズを削減
+RUN yarn install --production
 EXPOSE 3000
 CMD ["yarn", "start"]
