@@ -2,6 +2,16 @@
 
 This is a sample for Nuxt Meetup (in Japan) of 2019/08/26.
 
+## Stack
+
+- Nuxt.js v2.9
+  - Universal Mode
+  - with TypeScript
+- Docker v19.x
+  - with docker-compose v3.x
+- CircleCI v2.x
+  - use machine image
+
 ## Structure
 
 Using Docker's multi stage build (available from 17.05), the development environment, build environment, and production environment can be shared with a single Dockerfile.
