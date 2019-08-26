@@ -3,17 +3,10 @@
     <div>
       <logo />
       <h1 class="title">
-        nuxt-on-docker
+        Docker multi stage build on Nuxt.js
       </h1>
-      <h2 class="subtitle">
-        My marvelous Nuxt.js project
-      </h2>
       <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
+        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
           Documentation
         </a>
         <a
@@ -28,14 +21,15 @@
   </div>
 </template>
 
-<script>
-import Logo from '~/components/Logo.vue'
+<script lang="ts">
+import Vue from 'vue'
+import Logo from '../components/Logo.vue'
 
-export default {
+export default Vue.extend({
   components: {
     Logo
   }
-}
+})
 </script>
 
 <style>
@@ -53,7 +47,7 @@ export default {
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   display: block;
   font-weight: 300;
-  font-size: 100px;
+  font-size: 70px;
   color: #35495e;
   letter-spacing: 1px;
 }
